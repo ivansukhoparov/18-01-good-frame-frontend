@@ -47,10 +47,10 @@
             <a class="main-nav__link" href="catalog.html">Каталог проектов</a>
             <ul class="main-nav__list main-nav__list--sub">
               <li class="main-nav__item main-nav__item--sub">
-                <a class="main-nav__link" href="#">Современные</a>
+                <a class="main-nav__link" href="catalog.html/?utm_term=modern">Современные</a>
               </li>
               <li class="main-nav__item main-nav__item--sub">
-                <a class="main-nav__link" href="#">Классика</a>
+                <a class="main-nav__link" href="catalog.html/?utm_term=classik">Классика</a>
               </li>
             </ul>
           </li>
@@ -161,7 +161,7 @@
 
 
         <div class="page__footer-logo logo">
-        <a class="logo__link" href="#">
+        <a class="logo__link" href="index.html">
           <img
             src="img/logo-big.svg"
             class="logo__image"
@@ -199,7 +199,7 @@
       </div>
 </section>
 <section class="gallery__big-picture big-picture hidden" id="big-picture" >
-  <h3 class="big-picture__title">Проект дома <span class="big-picture__card-name">i003</span></h3>
+
   <div class="big-picture__wrapper">
     <button class="big-picture__control big-picture__control--prev"></button>
     <img src="img/gf0040000_Post.jpg" class="big-picture__image">
@@ -211,6 +211,19 @@
   </button>
 
 </section>
+
+<!-- Template for gallery thumbnail-->
+<template id="gallery-item">
+  <li class="gallery__item">
+    <a class="gallery__link" href="img/gf0040001_Post.jpg">
+      <img src="img/gf0040001_Post.jpg"
+      class="gallery__thumbnail"
+      alt="Фото проекта каркасного дома">
+    </a>
+  </li>
+</template>
+
+
     <script src="js/menu.js"></script>
     <script src="js/live-background.js"></script>
     <script src="js/gallery.js"></script>

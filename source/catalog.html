@@ -68,10 +68,10 @@
             <a class="main-nav__link" href="catalog.html">Каталог проектов</a>
             <ul class="main-nav__list main-nav__list--sub">
               <li class="main-nav__item main-nav__item--sub">
-                <a class="main-nav__link" href="#">Современные</a>
+                <a class="main-nav__link" href="catalog.html/?utm_term=modern">Современные</a>
               </li>
               <li class="main-nav__item main-nav__item--sub">
-                <a class="main-nav__link" href="#">Классика</a>
+                <a class="main-nav__link" href="catalog.html/?utm_term=classik">Классика</a>
               </li>
             </ul>
           </li>
@@ -317,7 +317,7 @@
 
 
         <div class="page__footer-logo logo">
-        <a class="logo__link" href="#">
+        <a class="logo__link" href="index.html">
           <img
             src="img/logo-big.svg"
             class="logo__image"
@@ -354,6 +354,24 @@
         <p class="contacts__address">Новоприозерское шоссе, 105</p>
       </div>
 </section>
+
+
+<!-- Template for catalog thumbnail-->
+<template id="catalog-item">
+  <li class="catalog__item">
+    <a href="card.html" class="catalog-item__link">
+      <img class="catalog-item__thumbnail" src="img/tt2.jpg" alt="" />
+      <p class="catalog-item__title">i001</p>
+
+      <div class="catalog-item__params">
+        <p class="catalog-item__area">150 кв.м.</p>
+        <p class="catalog-item__price">1 500 000 р.</p>
+      </div>
+    </a>
+  </li>
+</template>
+
+
 
     <script src="js/menu.js"></script>
     <script src="js/live-background.js"></script>

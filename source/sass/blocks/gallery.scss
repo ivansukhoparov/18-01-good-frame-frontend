@@ -12,7 +12,8 @@
   box-shadow: 0 0 0 0.2vw #3c3c3c;
 
   @media (min-width: $tablet-width) {
-    width: 30vw;
+    //cange width after test
+    width: 30.5vw;
     margin: 0.95vw 0.95vw;
 
     &:first-child,
@@ -26,7 +27,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 22.5vw;
+//cange width after test
+    width: 22.7vw;
     margin: 0.8vw 0.8vw;
 
     &:nth-child(3n+1) {
