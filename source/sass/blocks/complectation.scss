@@ -1,0 +1,100 @@
+.complectation {
+  font-size: 2vh;
+
+
+}
+
+.complectation__form{
+  font-size: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 70vh;
+}
+
+
+.complectation__field{
+  margin: 1vh 0;
+padding: 0;
+border: none;
+  &:first-child{
+    margin-top: 6vh;
+  }
+}
+
+
+.complectation__list{
+  list-style: none;
+  list-style: none;
+  margin: 0.8vh 2.5vh;
+  padding: 0;
+}
+
+.complectation__item{
+  margin-top: 0.5vh;
+}
+
+.complectation__label{
+
+  display: flex;
+  align-items: flex-end;
+
+  &--title{
+    text-transform: uppercase;
+  }
+
+  &::before{
+    content: "";
+    display: inline-block;
+    margin-right: 0.5vw;
+    width: 1.5vh;
+    height: 1.5vh;
+    border: $main-text 0.3vh solid;
+
+  }
+
+  &--radio{
+  &::before{
+    border-radius: 50%;
+  }
+
+  }
+  &--checkbox{
+    &::before{
+      border-radius: 5%;
+    }
+
+
+    }
+}
+
+input:checked + .complectation__label{
+  &::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    margin-right: 0.5vw;
+    width: 0.8vh;
+    height: 0.8vh;
+    background-color: $main-text;
+    margin: 0.66vh;
+  }
+
+
+&--checkbox{
+
+    &::after{
+      border-radius: 5%;
+    }
+
+    }
+
+    &--radio{
+
+      &::after{
+        border-radius: 50%;
+      }
+
+      }
+
+}

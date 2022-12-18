@@ -1,0 +1,86 @@
+.card-info {
+  display: flex;
+  font-size: 2vh;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-info__list {
+  width: 25vw;
+  list-style: none;
+}
+
+.card-info__description {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25vw;
+}
+
+.card-info__item {
+  display: flex;
+  align-items: center;
+  font-size: 3vh;
+  text-transform: uppercase;
+  margin-bottom: 2vh;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 8vh;
+    height: 8vh;
+    margin-right: 1vw;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &--bedrooms::before {
+    background-image: url("../../img/icon-bed.svg");
+  }
+  &--bathrooms::before {
+    background-image: url("../../img/icon-shower.svg");
+  }
+  &--storerooms::before {
+    background-image: url("../../img/icon-storage.svg");
+  }
+  &--dressingrooms::before {
+    background-image: url("../../img/icon-dress.svg");
+  }
+}
+.card-info__size {
+  font-size: 7vh;
+  text-align: right;
+}
+
+.card-info__area {
+  font-size: 7vh;
+  text-align: right;
+}
+
+.card-info__description-wrapper {
+  &:first-child {
+    margin-top: 6vh;
+  }
+  &:last-child {
+    margin-bottom: 6vh;
+  }
+}
+
+.card-info__show-full-text {
+  background-color: unset;
+  text-align: right;
+  margin: 1vh 0;
+  &:hover {
+    text-shadow: 0 0 2vh $main-text;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.card-info__text {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.8vw 1vw rgb(0 0 0 / 30%);
+}

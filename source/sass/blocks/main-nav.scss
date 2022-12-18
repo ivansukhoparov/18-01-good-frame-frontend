@@ -1,0 +1,50 @@
+.main-nav {
+  background-color: $semitransparent-dark;
+  margin: -9vh -1.6vw -3vh 0;
+  padding: 9vh 1.6vw;
+  z-index: 8;
+
+  &--catalog {
+    position: fixed;
+    right: 1.6vw;
+    height: 88vh;
+    padding: 15vh 1.6vw 3vh 1.6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__list {
+  padding: 1.5vw 0 0 0;
+  margin: 0 0 0 3vw;
+  list-style: none;
+
+  //for catalog
+  //position: fixed;
+  &--sub {
+    position: unset;
+  }
+}
+
+.main-nav__item {
+  margin: 0 0 1.5vw 0;
+
+  &--current {
+    border-bottom: $main-text solid 1px;
+    font-weight: 700;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  font-size: 1.7vw;
+  text-transform: uppercase;
+  color: $main-text;
+  text-decoration: none;
+  font-weight: normal;
+
+  &:hover {
+    text-shadow: 0 0 2vh $main-text;
+  }
+}

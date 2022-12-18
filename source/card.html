@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html class="" lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Строипльная компания Good Frame</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+  <div class="page__background page__background--card" style="background-image: url('img/main-background.jpg')"></div>
+  <div class="page__content card">
+    <div class="page__header-title page__header-title--card">
+      <h1 class="visually-hidden">
+        Строительство каркасных загородных домов в Санкт-Петербурге и
+        Ленинградской области
+      </h1>
+      <div class="page__card-title card__title-wrapper">
+        <p class="card__title">Проект каркасного дома</p>
+        <p class="card__name">i001</p>
+      </div>
+    </div>
+
+    <div class="page__menu-controls menu-controls">
+
+      <button class="button menu-controls__button menu-controls__close hidden" id="layer-close">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+
+      <button class="button menu-controls__button menu-controls__back">
+        <span class="visually-hidden">Назад</span>
+      </button>
+
+      <button class="button menu-controls__button menu-controls__toogle menu-controls__toogle--closed">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
+
+    <nav class="page__header-nav main-nav main-nav--catalog hidden">
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--current">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог проектов</a>
+          <ul class="main-nav__list main-nav__list--sub">
+            <li class="main-nav__item main-nav__item--sub">
+              <a class="main-nav__link" href="#">Современные</a>
+            </li>
+            <li class="main-nav__item main-nav__item--sub">
+              <a class="main-nav__link" href="#">Классика</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="gallery.html">Фотогалерея</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+      <div class="page__footer-contacts contacts">
+        <div class="contacts__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="">
+                <span class="visually-hidden">Мы на YouTube</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="">
+                <span class="visually-hidden">Мы в ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="">
+                <span class="visually-hidden">Мы в Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="contacts__phone">тел. +7 (812) 930-02-02</p>
+        <p class="contacts__mail">e-mail: info@good-frame.ru</p>
+        <p class="contacts__address">Новоприозерское шоссе, 105</p>
+      </div>
+    </nav>
+
+    <section class="page__main-content content">
+      <section class="content__card card-info" id="card-info">
+        <ul class="card-info__list">
+          <li class="card-info__item card-info__item--bedrooms">3 спальни</li>
+          <li class="card-info__item card-info__item--bathrooms">
+            3 санузла
+          </li>
+          <li class="card-info__item card-info__item--storerooms">
+            3 кладовые
+          </li>
+          <li class="card-info__item card-info__item--dressingrooms">
+            3 гардеробные
+          </li>
+        </ul>
+        <div class="card-info__description">
+          <div class="card-info__description-wrapper">
+            <p class="card-info__size">8,0x6,0 м</p>
+            <p class="card-info__area">108,0 м²</p>
+          </div>
+          <div class="card-info__description-wrapper">
+            <p class="card-info__text">
+              Этот дом по достоинству оценят ценители больших, светлых и
+              комфортных пространств. Здесь есть все, что необходимо для
+              уютной жизни в атмосфере удивительной теплоты. Проект
+              предусматривает не только тамбур, гостиную, холл, кухню и
+              спальни. В доме найдется место и для гостевой, и для кабинета.
+              Продуманная планировка сделает ваше жилище максимально
+              функциональным и практичным. Солидный внешний вид дому придают
+              современные материалы. Они делают постройку завершенной,
+              гармоничной и эффектно вписывающейся в окружающую среду.
+            </p>
+            <a class="button card-info__show-full-text hidden">
+              полное описание проекта...
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content__card card-plans hidden" id="card-plans">
+        <img class="card-plans__img" src="img/111 1.png" alt="Планировка дома по проекту i001" />
+      </section>
+
+      <section class="content__card card-complectation complectation hidden" id="card-complectation">
+
+        <form class="complectation__form" id="complectation" action="#" method="get">
+
+          <fieldset class="complectation__field complectation__field--base">
+            <input type="checkbox" class="complectation__checkbox visually-hidden" id="complectation-base" name="base"
+              value="base" />
+            <label for="complectation-base"
+              class="complectation__label complectation__label--checkbox complectation__label--title">Фундамент
+              <span class="complectation__price">- 150 000 p.</span>
+            </label>
+            <ul class="complectation__list">
+              <li class="complectation__item">
+                <input type="radio" class=" complectation__radio visually-hidden" id="base-screw-pile" name="base-type"
+                  value="screw-pile" checked />
+                <label for="base-screw-pile" class="complectation__label complectation__label--radio">Витовые сваи
+                  <span class="complectation__price">- 150 000 p.</span>
+                </label>
+              </li>
+              <li class="complectation__item">
+                <input type="radio" class="complectation__radio visually-hidden" id="base-concrete-pile"
+                  name="base-type" value="concrete-pile" />
+                <label for="base-concrete-pile" class="complectation__label complectation__label--radio">ЖБ сваи
+                  <span class="complectation__price">- 150 000 p.</span>
+                </label>
+              </li>
+              <li class="complectation__item">
+                <input type="radio" class="complectation__radio visually-hidden" id="base-monolithic-slab"
+                  name="base-type" value="screw-monolithic-slab" />
+                <label for="base-monolithic-slab" class="complectation__label complectation__label--radio">Монолитная
+                  плита
+                  <span class="complectation__price">- 150 000 p.</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="complectation__field complectation__field--base">
+            <input type="checkbox" class="complectation__checkbox visually-hidden" id="frame" name="frame" value="frame"
+              checked disabled />
+            <label for="frame"
+              class="complectation__label complectation__label--checkbox complectation__label--title">Каркас под кровлю
+              <span class="complectation__price">- 150 000 p.</span>
+            </label>
+            <ul class="complectation__list">
+              <li class="complectation__item">Перекрытия - доска 45х145 мм</li>
+              <li class="complectation__item">Стены - доска 45х145 мм</li>
+              <li class="complectation__item">Стропильная система - доска 45х145 мм</li>
+              <li class="complectation__item">Подкровельная мембрана - роквул</li>
+              <li class="complectation__item">Кровельное порытие - профлит</li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="complectation__field complectation__field--base">
+            <input type="checkbox" class="complectation__checkbox visually-hidden" id="outer" name="outer"
+              value="outer" />
+            <label for="outer"
+              class="complectation__label complectation__label--checkbox complectation__label--title">Наружная отделка
+              <span class="complectation__price">- 150 000 p.</span>
+            </label>
+            <ul class="complectation__list">
+              <li class="complectation__item">Ветрозащитная мемтрана - роквур</li>
+              <li class="complectation__item">Обрешетка - доска 20х145 мм / брусок 40х40 мм</li>
+              <li class="complectation__item">Наружная отделка - имитация бруса 20х200 мм</li>
+              <li class="complectation__item">Окна - ПВХ профиль 60 мм</li>
+              <li class="complectation__item">Входная дверь - временная китайская</li>
+              <li class="complectation__item">
+                <input type="checkbox" class="complectation__checkbox visually-hidden" id="belthermo" name="belthermo"
+                  value="belthermo" />
+                <label for="belthermo" class="complectation__label complectation__label--checkbox">Утеплние белтермо 20
+                  мм
+                  <span class="complectation__price">- 150 000 p.</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="complectation__field complectation__field--base">
+            <input type="checkbox" class="complectation__checkbox visually-hidden" id="thermoisolation"
+              name="thermoisolation" value="thermoisolation" />
+            <label for="thermoisolation"
+              class="complectation__label complectation__label--checkbox complectation__label--title">Утепление
+              <span class="complectation__price">- 150 000 p.</span>
+            </label>
+            <ul class="complectation__list">
+              <li class="complectation__item">
+                <input type="radio" class="complectation__radio visually-hidden" id="thermoisolation150"
+                  name="thermoisolation-thickness" value="thermoisolation150" checked />
+                <label for="thermoisolation150" class="complectation__label complectation__label--radio">Утепление 150
+                  мм
+                  <span class="complectation__price">- 150 000 p.</span>
+                </label>
+              </li>
+              <li class="complectation__item">
+                <input type="radio" class="complectation__radio visually-hidden" id="thermoisolation200"
+                  name="thermoisolation-thickness" value="thermoisolation200" />
+                <label for="thermoisolation200" class="complectation__label complectation__label--radio">Утепление 200
+                  мм
+                  <span class="complectation__price">- 150 000 p.</span>
+                </label>
+              </li>
+              <li class="complectation__item">Пароизоляционная мемтрана - роквул</li>
+              <li class="complectation__item">Обрешетка - рейка 20х40 мм</li>
+              <li class="complectation__item">Настил пола- QuickDeck 22 мм</li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="complectation__field complectation__field--base">
+            <input type="checkbox" class="complectation__checkbox visually-hidden" id="inner" name="inner"
+              value="inner" />
+            <label for="inner"
+              class="complectation__label complectation__label--checkbox complectation__label--title">Внутренняя отделка
+              <span class="complectation__price">- 150 000 p.</span>
+            </label>
+            <ul class="complectation__list">
+              <li class="complectation__item">Стены - имитация бруса 20х200 мм</li>
+              <li class="complectation__item">Стены С/У - ГКЛ 12,5 мм</li>
+              <li class="complectation__item">Потолки - натяжные</li>
+              <li class="complectation__item">Межкомнатные двери</li>
+            </ul>
+          </fieldset>
+
+
+          <fieldset class="complectation__field complectation__field--base">
+            <input type="checkbox" class="complectation__checkbox visually-hidden" id="engineering" name="engineering"
+              value="engineering" />
+            <label for="engineering"
+              class="complectation__label complectation__label--checkbox complectation__label--title">Инженерия
+              <span class="complectation__price">- 150 000 p.</span>
+            </label>
+            <ul class="complectation__list">
+              <li class="complectation__item">
+                <input type="checkbox" class="complectation__checkbox visually-hidden" id="electrics" name="electrics"
+                  value="electrics" />
+                <label for="electrics" class="complectation__label complectation__label--checkbox">Разводка электрики
+                  <span class="complectation__price">- 150 000 p.</span>
+                </label>
+              </li>
+              <li class="complectation__item">
+                <input type="checkbox" class="complectation__checkbox visually-hidden" id="electric-shield"
+                  name="electric-shield" value="electric-shield" />
+                <label for="electric-shield" class="complectation__label complectation__label--checkbox">Щитовая
+                  <span class="complectation__price">- 150 000 p.</span>
+                </label>
+              </li>
+
+
+              <li class="complectation__item">
+                <input type="checkbox" class="complectation__checkbox visually-hidden" id="vent" name="vent"
+                  value="vent" />
+                <label for="vent" class="complectation__label complectation__label--checkbox ">Вентиляция
+                  <span class="complectation__price">- 150 000 p.</span>
+                </label>
+              </li>
+              <li class="complectation__item">
+                <input type="checkbox" class="complectation__checkbox visually-hidden" id="water-supply"
+                  name="water-supply" value="water-supply" />
+                <label for="water-supply" class="complectation__label complectation__label--checkbox">Разводка труб
+                  водоснабжения
+                  <span class="complectation__price">- 150 000 p.</span>
+                </label>
+              </li>
+              <li class="complectation__item">
+                <input type="checkbox" class="complectation__checkbox visually-hidden" id="sewerage" name="sewerage"
+                  value="sewerage" />
+                <label for="sewerage" class="complectation__label complectation__label--checkbox">Разводка канализации
+                  <span class="complectation__price">- 150 000 p.</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="complectation__field complectation__field--base">
+            <input type="checkbox" class="complectation__checkbox visually-hidden" id="heating" name="heating-system"
+              value="base" />
+            <label for="heating"
+              class="complectation__label complectation__label--checkbox complectation__label--title">Отопление
+              <span class="complectation__price">- 150 000 p.</span>
+            </label>
+            <ul class="complectation__list">
+              <li class="complectation__item">
+                <input type="radio" class="complectation__radio visually-hidden" id="warm-floor" name="heating"
+                  value="base" />
+                <label for="warm-floor" class="complectation__label complectation__label--radio">Теплые полы
+                  <span class="complectation__price">- 150 000 p.</span>
+                </label>
+              </li>
+              <li class="complectation__item">
+                <input type="radio" class="complectation__radio visually-hidden" id="radiators" name="heating"
+                  value="base" checked />
+                <label for="radiators" class="complectation__label complectation__label--radio">Радиаторы
+                  <span class="complectation__price">- 150 000 p.</span>
+                </label>
+              </li>
+              <li class="complectation__item">
+                <input type="radio" class="complectation__radio visually-hidden" id="electric-boiler" name="boiler"
+                  value="base" checked />
+                <label for="electric-boiler" class="complectation__label complectation__label--radio">Электрический
+                  котел
+                  <span class="complectation__price">- 150 000 p.</span>
+                </label>
+              </li>
+              <li class="complectation__item">
+                <input type="radio" class="complectation__radio visually-hidden" id="gas-boiler" name="boiler"
+                  value="base" />
+                <label for="gas-boiler" class="complectation__label complectation__label--radio">Газовый котел
+                  <span class="complectation__price">- 150 000 p.</span>
+                </label>
+              </li>
+
+            </ul>
+          </fieldset>
+
+          <fieldset class="complectation__field complectation__field--base">
+            <p class="complectation__text--total">Итого</p>
+            <p class="complectation__total">2 150 000 р.</p>
+            <button class="button complectation__button" id="get-offer">Получить коммерческое предложение на
+              e-mail</button>
+
+          </fieldset>
+
+        </form>
+      </section>
+
+      <section class="content__card content__card--gallery gallery hidden" id="card-gallery">
+
+<ul class="gallery__list">
+  <li class="gallery__item">
+    <a class="gallery__link" href="img/gf0040001_Post.jpg">
+      <img src="img/gf0040001_Post.jpg"
+      class="gallery__thumbnail"
+      alt="Фото проекта каркасного дома">
+    </a>
+  </li>
+  <li class="gallery__item">
+    <a class="gallery__link" href="img/gf0040002_Post.jpg">
+      <img src="img/gf0040002_Post.jpg"
+      class="gallery__thumbnail"
+      alt="Фото проекта каркасного дома">
+    </a>
+  </li>
+  <li class="gallery__item">
+    <a class="gallery__link" href="img/gf0040003_Post.jpg">
+      <img src="img/gf0040003_Post.jpg"
+      class="gallery__thumbnail"
+      alt="Фото проекта каркасного дома">
+    </a>
+  </li>
+  <li class="gallery__item">
+    <a class="gallery__link" href="img/gf0040000_Post.jpg">
+      <img src="img/gf0040000_Post.jpg"
+      class="gallery__thumbnail"
+      alt="Фото проекта каркасного дома">
+    </a>
+  </li>
+  <li class="gallery__item">
+    <a class="gallery__link" href="img/tt1.jpg">
+      <img src="img/tt1.jpg"
+      class="gallery__thumbnail"
+      alt="Фото проекта каркасного дома">
+    </a>
+  </li>
+  <li class="gallery__item">
+    <a class="gallery__link" href="img/tt5.jpg">
+      <img src="img/tt5.jpg"
+      class="gallery__thumbnail"
+      alt="Фото проекта каркасного дома">
+    </a>
+  </li>
+  <li class="gallery__item">
+    <a class="gallery__link" href="img/tt2.jpg">
+      <img src="img/tt2.jpg"
+      class="gallery__thumbnail"
+      alt="Фото проекта каркасного дома">
+    </a>
+  </li>
+  <li class="gallery__item">
+    <a class="gallery__link" href="img/tt8.jpg">
+      <img src="img/tt8.jpg"
+      class="gallery__thumbnail"
+      alt="Фото проекта каркасного дома">
+    </a>
+  </li>
+  <li class="gallery__item">
+    <a class="gallery__link" href="img/tt7.jpg">
+      <img src="img/tt7.jpg"
+      class="gallery__thumbnail"
+      alt="Фото проекта каркасного дома">
+    </a>
+  </li>
+</ul>
+
+
+      </section>
+    </section>
+
+    <div class="page__footer-logo logo" id="footer-logo">
+      <a class="logo__link" href="#">
+        <img src="img/logo-big.svg" class="logo__image" alt="логотип компании GoodFrame" />
+      </a>
+
+      <p class="logo__description">По-настоящему хорошие каркасные дома</p>
+    </div>
+
+    <div class="page__footer-controls controls" id="footer-controls">
+      <a class="button controls__button controls__button--plans" href="">
+        <p class="controls__text">Планировки</p>
+      </a>
+      <a class="button controls__button controls__button--complec" href="">
+        <p class="controls__text">Комплектации</p>
+      </a>
+      <a class="button controls__button controls__button--gallery" href="">
+        <p class="controls__text">Галерея проекта</p>
+      </a>
+    </div>
+
+    <div class="page__footer-contacts contacts" id="footer-contacts">
+      <div class="contacts__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="">
+              <span class="visually-hidden">Мы на YouTube</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="">
+              <span class="visually-hidden">Мы в ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="">
+              <span class="visually-hidden">Мы в Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="contacts__phone">тел. +7 (812) 930-02-02</p>
+      <p class="contacts__mail">e-mail: info@good-frame.ru</p>
+      <p class="contacts__address">Новоприозерское шоссе, 105</p>
+    </div>
+  </div>
+
+
+  <section class="gallery__big-picture big-picture hidden" id="big-picture" >
+    <h3 class="big-picture__title">Проект дома <span class="big-picture__card-name">i003</span></h3>
+    <div class="big-picture__wrapper">
+      <button class="big-picture__control big-picture__control--prev"></button>
+      <img src="img/gf0040000_Post.jpg" class="big-picture__image">
+      <button class="big-picture__control big-picture__control--next"></button>
+    </div>
+    <p class="big-picture__description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a...</p>
+    <button class="button menu-controls__button menu-controls__close big-picture__close" id="big-picture-close">
+      <span class="visually-hidden">Закрыть окно</span>
+    </button>
+
+  </section>
+
+  <script src="js/menu.js"></script>
+  <script src="js/show-card-layers.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+
+</html>
