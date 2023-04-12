@@ -1,0 +1,21 @@
+.header {
+
+  z-index: 9;
+
+}
+
+.header__logo-image {
+  height: 6vh;
+}
+
+.header__background{
+  filter: blur(3vh);
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 18vh;
+  width: 110vw;
+  position: absolute;
+  z-index: -1;
+  top: -6vh;
+  left: -5vw;
+}

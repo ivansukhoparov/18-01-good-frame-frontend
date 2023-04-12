@@ -1,0 +1,29 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5vh;
+  @media (min-width: $tablet-width) {
+//align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.contacts__phone {
+  text-align: right;
+  font-size: 26px;
+}
+.contacts__mail {
+  text-align: right;
+  font-size: 22px;
+}
+.contacts__address {
+  text-align: right;
+  font-size: 18px;
+}
+.contacts__social {
+}

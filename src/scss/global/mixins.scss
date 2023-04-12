@@ -1,0 +1,57 @@
+@mixin back-arrow-button {
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    margin-left: -1.5vh;
+    width: 2.57vh;
+    height: 0.6vh;
+    background-color: $main-text;
+  }
+
+  &::before {
+    margin-top: 0.4vh;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    margin-top: -1vh;
+    transform: rotate(-45deg);
+  }
+}
+
+@mixin close-menu-button {
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    margin-top: -0.4vh;
+    margin-left: -2.1vh;
+    width: 4.24vh;
+    height: 0.6vh;
+    background-color: $main-text;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+@mixin open-menu-button {
+  &::before {
+    content: "";
+    position: absolute;
+    margin-top: -1.65vh;
+    margin-left: -1.65vh;
+    width: 3.5vh;
+    height: 0.6vh;
+    background-color: $main-text;
+    box-shadow: 0 1.36vh 0 0 $main-text, 0 2.72vh 0 0 $main-text;
+  }
+}

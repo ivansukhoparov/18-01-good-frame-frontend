@@ -1,0 +1,75 @@
+.header-controls {
+  display: flex;
+  flex-direction: column;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 18px;
+
+
+
+  @media (min-width: $tablet-width) {
+ flex-direction: row;
+ justify-content: space-evenly;
+  height: 24px;
+    margin: 10px 0;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+
+    justify-content: space-between;
+      height: 6vh;
+   margin: 0 20px;
+    &--gallery{
+      justify-content: flex-end;
+    }
+  }
+
+
+
+
+}
+
+.header-controls__button {
+  display: block;
+
+  text-transform: uppercase;
+  color: $main-elements;
+  text-decoration: none;
+  font-weight: normal;
+  background-color: unset;
+
+  &:hover {
+    color: $main-text;
+    cursor: pointer;
+    text-shadow: 0 0 2vh $main-text;
+  }
+  &:active {
+    color: $main-text;
+    text-decoration: underline;
+  }
+
+  &--active {
+    color: $main-text;
+    text-decoration: underline;
+  }
+}
+
+.header-controls__type {
+  display: flex;
+}
+
+.header-controls__sort {
+  display: flex;
+}
+
+.header-controls__separator {
+  margin: 0 5px;
+  display: block;
+
+  text-transform: uppercase;
+  color: #ffffff;
+}

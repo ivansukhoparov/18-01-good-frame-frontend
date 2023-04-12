@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="" lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Строипльная компания Good Frame</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width; initial-scale=1">
+</head>
+
+<body class="page">
+  <div class="page__background page__background--catalog"></div>
+  <div class="page__content page__content--catalog">
+    @@include('components/menu-control.html')
+
+    <section class="page__header header">
+
+      <h1 class="visually-hidden">
+        Строительство каркасных загородных домов в Санкт-Петербурге и
+        Ленинградской области
+      </h1>
+      <div class="header__background"></div>
+      <img class="header__logo-image" src="img/logo-mini.svg" />
+      <div class="header__controls  header-controls header-controls--gallery">
+        <div class="header-controls__type">
+          <a class="button header-controls__button header-controls__button--active">Все</a>
+          <div class="header-controls__separator">|</div>
+          <a class="button header-controls__button">Строящиеся</a>
+          <div class="header-controls__separator">|</div>
+          <a class="button header-controls__button">Построенные</a>
+        </div>
+      </div>
+    </section>
+
+
+
+    @@include('components/menu.html')
+
+    <section class="page__main-content content catalog__content">
+      <ul class="gallery__list">
+        <li class="gallery__item">
+          <a class="gallery__link" href="img/gf0040001_Post.jpg">
+            <img src="img/gf0040001_Post.jpg" class="gallery__thumbnail" alt="Фото проекта каркасного дома">
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="img/gf0040002_Post.jpg">
+            <img src="img/gf0040002_Post.jpg" class="gallery__thumbnail" alt="Фото проекта каркасного дома">
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="img/gf0040003_Post.jpg">
+            <img src="img/gf0040003_Post.jpg" class="gallery__thumbnail" alt="Фото проекта каркасного дома">
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="img/gf0040000_Post.jpg">
+            <img src="img/gf0040000_Post.jpg" class="gallery__thumbnail" alt="Фото проекта каркасного дома">
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="img/tt1.jpg">
+            <img src="img/tt1.jpg" class="gallery__thumbnail" alt="Фото проекта каркасного дома">
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="img/tt5.jpg">
+            <img src="img/tt5.jpg" class="gallery__thumbnail" alt="Фото проекта каркасного дома">
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="img/tt2.jpg">
+            <img src="img/tt2.jpg" class="gallery__thumbnail" alt="Фото проекта каркасного дома">
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="img/tt8.jpg">
+            <img src="img/tt8.jpg" class="gallery__thumbnail" alt="Фото проекта каркасного дома">
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="img/tt7.jpg">
+            <img src="img/tt7.jpg" class="gallery__thumbnail" alt="Фото проекта каркасного дома">
+          </a>
+        </li>
+      </ul>
+
+    </section>
+
+
+
+
+    <section class="page__footer footer">
+      <div class="foote__contacts contacts">
+        <div class="contacts__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="">
+                <span class="visually-hidden">Мы на YouTube</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="">
+                <span class="visually-hidden">Мы в ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="">
+                <span class="visually-hidden">Мы в Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="contacts__phone">тел. +7 (812) 930-02-02</p>
+        <p class="contacts__mail">e-mail: info@good-frame.ru</p>
+        <p class="contacts__address">Новоприозерское шоссе, 105</p>
+      </div>
+    </section>>
+
+    <section class="gallery__big-picture big-picture hidden" id="big-picture">
+
+      <div class="big-picture__wrapper">
+        <button class="big-picture__control big-picture__control--prev"></button>
+        <img src="img/gf0040000_Post.jpg" class="big-picture__image">
+        <button class="big-picture__control big-picture__control--next"></button>
+      </div>
+      <p class="big-picture__description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a...</p>
+      <button class="button menu-controls__button menu-controls__close big-picture__close" id="big-picture-close">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+
+    </section>
+
+    <!-- Template for gallery thumbnail-->
+    <template id="gallery-item">
+      <li class="gallery__item">
+        <a class="gallery__link" href="img/gf0040001_Post.jpg">
+          <img src="img/gf0040001_Post.jpg" class="gallery__thumbnail" alt="Фото проекта каркасного дома">
+        </a>
+      </li>
+    </template>
+
+
+    <script src="js/menu.js"></script>
+    <script src="js/live-background.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+
+</html>

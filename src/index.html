@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="" lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Строипльная компания Good Frame</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width; initial-scale=1">
+</head>
+
+<body class="page">
+  <div class="page__background page__background--second"></div>
+  <div class="page__background page__background--main"></div>
+  <div class="page__content">
+
+    @@include('components/menu-control.html')
+
+    <section class="page__header  page__header--main header">
+      <h1 class="visually-hidden">
+        Строительство каркасных загородных домов в Санкт-Петербурге и
+        Ленинградской области
+      </h1>
+      <img class="page__header-logo" src="img/logo-mini.svg" />
+      <p class="page__title">
+        Современный <br />
+        взгляд на<br />
+        жизнь за городом
+      </p>
+    </section>
+
+
+    @@include('components/menu.html')
+
+    <div class="page__main-controls controls">
+      <a class="button controls__button controls__button--to-catalog" href="catalog.html">
+        <p class="controls__text">Каталог проектов</p>
+      </a>
+    </div>
+
+    <section class="page__footer page__footer--main footer">
+      <div class="footer__contacts contacts">
+        <div class="contacts__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="">
+                <span class="visually-hidden">Мы на YouTube</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="">
+                <span class="visually-hidden">Мы в ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="">
+                <span class="visually-hidden">Мы в Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="contacts__phone">тел. +7 (812) 930-02-02</p>
+        <p class="contacts__mail">e-mail: info@good-frame.ru</p>
+        <p class="contacts__address">Л.О., Новоприозерское шоссе, 105</p>
+      </div>
+
+    </section>
+
+  </div>
+  <script src="js/menu.js"></script>
+  <script src="js/live-background.js"></script>
+</body>
+
+</html>

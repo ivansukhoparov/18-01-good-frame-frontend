@@ -1,45 +1,24 @@
-import gulp from 'gulp';
-import plumber from 'gulp-plumber';
-import sass from 'gulp-dart-sass';
-import postcss from 'gulp-postcss';
-import autoprefixer from 'autoprefixer';
-import browser from 'browser-sync';
+const gulp = require('gulp');
 
-// Styles
+const requireDir = require('require-dir');
+const tasks = requireDir('./tasks');
 
-export const styles = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
-    .pipe(browser.stream());
-}
+exports.build_html = tasks.build_html;
+exports.build_js = tasks.build_js;
+exports.build_sass = tasks.build_sass;
+exports.dev_html = tasks.dev_html;
+exports.dev_sass = tasks.dev_sass;
+exports.dev_js = tasks.dev_js;
+exports.serverv = tasks.server;
+exports.watcher = tasks.watcher;
+exports.dev_img = tasks.dev_img;
 
-// Server
+exports.default = gulp.series(
+    exports.dev_html,
+    exports.dev_sass,
+    exports.dev_js,
+    exports.dev_img,
+    exports.serverv,
+    exports.watcher
+)
 
-const server = (done) => {
-  browser.init({
-    server: {
-      baseDir: 'source'
-    },
-    cors: true,
-    notify: false,
-    ui: false,
-  });
-  done();
-}
-
-// Watcher
-
-const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
-}
-
-
-export default gulp.series(
-  styles, server, watcher
-);
